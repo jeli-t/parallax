@@ -1,0 +1,114 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-size: clamp(5rem, 10vw, 12rem);
+    font-family: 'Roboto', sans-serif;
+}
+
+.section1, .section2, .section3, .section4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1::before {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob1.svg') right no-repeat;
+    background-size: contain;
+    transform: translateZ(-99px) scale(1);
+}
+
+.section1::after {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob2.svg') left no-repeat;
+    bottom: 10%;
+    background-size: contain;
+    transform: translateZ(-40px) scale(0.4);
+}
+
+.section2::before {
+    content: "";
+    width: 280%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob3.svg') left no-repeat;
+    background-size: contain;
+    transform: translateZ(-99px) scale(1);
+}
+
+.section2::after {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob4.svg') right no-repeat;
+    background-size: contain;
+    transform: translateZ(-40px) scale(0.4);
+}
+
+.section3::before {
+    content: "";
+    width: 260%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob5.svg') right no-repeat;
+    background-size: contain;
+    transform: translateZ(-99px) scale(1);
+}
+
+.section3::after {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob6.svg') left no-repeat;
+    background-size: contain;
+    transform: translateZ(-40px) scale(0.4);
+}
+
+.section4::before {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob7.svg') left no-repeat;
+    background-size: contain;
+    transform: translateZ(-99px) scale(1);
+}
+
+.section4::after {
+    content: "";
+    width: 300%;
+    height: 200%;
+    position: absolute;
+    background: url('shapes/blob8.svg') right no-repeat;
+    top: 10%;
+    background-size: contain;
+    transform: translateZ(-40px) scale(0.4);
+}
